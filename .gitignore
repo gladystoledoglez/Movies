@@ -1,3 +1,26 @@
+*.iml
+.gradle
+/local.properties
+/.idea/caches
+/.idea/libraries
+/.idea/modules.xml
+/.idea/workspace.xml
+/.idea/navEditor.xml
+/.idea/assetWizardSettings.xml
+.DS_Store
+/build
+/captures
+.externalNativeBuild
+.cxx
+local.properties
+/.idea/gradle.xml
+/.idea/misc.xml
+/.idea/compiler.xml
+# Default ignored files
+/shelf/
+/workspace.xml
+/.idea/.gitignore
+/.idea/vcs.xml
 # Built application files
 *.apk
 *.aar
