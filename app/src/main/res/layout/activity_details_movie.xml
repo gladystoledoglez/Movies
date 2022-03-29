@@ -4,13 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MovieDetailsFragment">
+    tools:context=".fragments.MovieDetailsFragment">
 
     <ImageView
-        android:id="@+id/imageMovie"
+        android:id="@+id/ivPoster"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        app:layout_constraintBottom_toTopOf="@+id/genre"
+        app:layout_constraintBottom_toTopOf="@+id/tbGenre"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
@@ -18,25 +18,25 @@
         tools:srcCompat="@tools:sample/avatars" />
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/genre"
+        android:id="@+id/tbGenre"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/purple_200"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme"
-        app:layout_constraintBottom_toTopOf="@+id/synopsis"
+        app:layout_constraintBottom_toTopOf="@+id/tvDescription"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/imageMovie" />
+        app:layout_constraintTop_toBottomOf="@id/ivPoster" />
 
     <TextView
-        android:id="@+id/synopsis"
+        android:id="@+id/tvDescription"
         android:layout_width="0dp"
         android:layout_height="0dp"
         android:text="TextView"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/genre"
-        app:layout_constraintStart_toStartOf="@+id/genre"
-        app:layout_constraintTop_toBottomOf="@+id/genre" />
+        app:layout_constraintEnd_toEndOf="@+id/tbGenre"
+        app:layout_constraintStart_toStartOf="@+id/tbGenre"
+        app:layout_constraintTop_toBottomOf="@+id/tbGenre" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

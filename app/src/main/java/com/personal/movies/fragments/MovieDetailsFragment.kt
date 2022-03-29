@@ -1,4 +1,4 @@
-package com.personal.movies
+package com.personal.movies.fragments
 
 import androidx.fragment.app.Fragment
 
