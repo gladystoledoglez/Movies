@@ -1,23 +1,22 @@
-package com.personal.movies.api
+package com.personal.movies.data.remote
 
-import com.personal.movies.data.CurrentMovies
-import com.personal.movies.data.GenresList
-import retrofit2.Call
+import com.personal.movies.data.entities.CurrentMoviesEntity
+import com.personal.movies.data.entities.GenresListEntity
 import retrofit2.http.GET
 import retrofit2.http.Query
 
-interface MovieService {
+interface TheMovieDatabaseService {
     @GET("movie/now_playing")
-    fun getCurrentMovies(
+    suspend fun getCurrentMovies(
         @Query("api_key") apiKey: String,
         @Query("language") language: String,
         @Query("page") page: Int,
         @Query("region") region: String
-    ): Call<CurrentMovies>
+    ): CurrentMoviesEntity
 
     @GET("genre/movie/list")
-    fun getGenresList(
+    suspend fun getGenresList(
         @Query("api_key") apiKey: String,
         @Query("language") language: String,
-    ): Call<GenresList>
+    ): GenresListEntity
 }

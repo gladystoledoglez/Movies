@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Movies</string>
+    <string name="error">Ocorreu um erro. Tente novamente.</string>
+    <string name="imageError">Ocorreu um erro carregando a imagen. Tente novamente.</string>
 </resources>
